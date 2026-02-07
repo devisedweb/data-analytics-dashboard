@@ -32,4 +32,73 @@ section {
   background-blend-mode: screen;
   background-position: -100px;
   height: 100%;
+  padding: 2em;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  color: #2d7dff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 12%;
+  width: 100%;
+  margin: 0;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.cv {
+  display: grid;
+  place-items: center;
+  height: 80%;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 89%;
+  margin-bottom: 1.1em;
+}
+
+p {
+  color: #847d93;
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+  font-weight: 300;
+  line-height: 111%;
+  margin-bottom: 2.875rem;
+}
+
+.cta {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 111%;
+  padding: 1.25em 1.25em 1.25em calc(2.5em + 1.5em);
+  border: 1px solid #4d4d4d;
+  display: inline-block;
+  position: relative;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  left: 1.25em;
+  background: url(./arrow.svg) no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.cta:hover {
+  background: #2d7dff;
 }
