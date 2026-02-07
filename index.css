@@ -22,10 +22,6 @@ body {
   height: calc(100% - 2em);
 }
 
-nav {
-  display: none;
-}
-
 section {
   background: #221f26 url(./bg.jpg);
   background-size: cover;
@@ -33,6 +29,7 @@ section {
   background-position: -100px;
   height: 100%;
   padding: 2em;
+  border-radius: 13px;
 }
 
 header {
@@ -63,6 +60,7 @@ header {
 h1 {
   color: #ffffff;
   font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4rem);
+  font-size: 7rem;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 89%;
@@ -72,6 +70,7 @@ h1 {
 p {
   color: #847d93;
   font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+  font-size: 6rem;
   font-weight: 300;
   line-height: 111%;
   margin-bottom: 2.875rem;
@@ -101,4 +100,55 @@ p {
 
 .cta:hover {
   background: #2d7dff;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  background: #2c2931;
+  max-width: 300px;
+}
+
+.back-btn {
+  transform: scaleX(-1);
+  padding: 3em 4em 2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.back-btn:hover {
+  transform: scaleX(-1) translateX(6px);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  /* padding: 0.875em 2.75em 0.625em 2.688em; */
+  padding: 0.875em 5em 0.875em 4em;
+}
+
+ul li a:hover {
+  background: #413e47;
+}
+
+.active {
+  background: #2d7dff;
+}
+
+.active:hover {
+  background: #4497ff;
 }
