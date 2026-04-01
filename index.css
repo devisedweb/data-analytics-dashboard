@@ -110,6 +110,8 @@ nav {
   z-index: 1;
   background: #2c2931;
   max-width: 300px;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
 }
 
 .back-btn {
